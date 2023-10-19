@@ -3,9 +3,9 @@ header {
     position: sticky;
     height: 150px;
     background-color: #ffffff;
-    justify-content: space-between; 
+    justify-content: space-between;
     align-items: center;
-    padding: 0 20px; 
+    padding: 10px 20px;
 }
 body {
     margin: 0;
@@ -14,14 +14,19 @@ body {
 #home-button {
     display: flex;
     height: 40px;
-    width: auto; 
+    width: auto;
 }
 #home-button a {
     display: flex;
-    height: 40px; 
+    height: 40px;
     width: auto;
 }
 #Logo {
+    display: flex;
+    height: 150px;
+    width: auto;
+}
+#Logo a {
     display: flex;
     height: 150px;
     width: auto;
@@ -33,7 +38,7 @@ body {
     width: auto;
     display: inline-block;
     padding-right: 75px;
-    padding-left: 75px;
+    padding-left: 100px;
 }
 .button {
     display: flex;
@@ -54,4 +59,62 @@ body {
 }
 p {
     text-align: center;
+}
+.car1-config {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.car1-config img {
+    display: flex;
+    justify-content: left;
+    width: 550px;
+    height: auto;
+    margin-left: 10%;
+}
+#color-buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin-right: 25%;
+}
+.color-button {
+    width: 80px;
+    height: 50px;
+    margin: 5px;
+    cursor: pointer;
+    border: 1px solid black;
+}
+
+.white {
+    background-color: white;
+}
+
+.black {
+    background-color: black;
+}
+
+.red {
+    background-color: red;
+}
+
+.yellow {
+    background-color: yellow;
+}
+footer {
+    display: flex;
+    position: sticky;
+    height: 80px;
+    background-color: #ffffff;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    list-style-type: none;
+    margin-left: 50px;
+}
+#imp {
+    margin-left: 1000%;
 }
