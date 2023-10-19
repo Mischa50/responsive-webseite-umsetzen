@@ -11,34 +11,59 @@ body {
     margin: 0;
     padding: 0;
 }
+h2 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
 #home-button {
     display: flex;
     height: 40px;
     width: auto;
+    margin-left: 2%;
 }
+
 #home-button a {
     display: flex;
     height: 40px;
     width: auto;
 }
+
 #Logo {
     display: flex;
-    height: 150px;
+    height: 80px;
     width: auto;
 }
+
 #Logo a {
     display: flex;
-    height: 150px;
+    height: 80px;
     width: auto;
 }
+
+#contact {
+    display: flex;
+    height: 40px;
+    width: auto;
+    margin-right: 5%;
+}
+
+#contact a {
+    display: flex;
+    height: 40px;
+    width: auto;
+}
+
 #car1,
 #car2,
-#car3 {
+#car3,
+#car4,
+#car5,
+#car6 {
     height: 200px;
     width: auto;
     display: inline-block;
     padding-right: 75px;
     padding-left: 100px;
+    margin-top: 1%;
 }
 .button {
     display: flex;
@@ -102,19 +127,4 @@ p {
 
 .yellow {
     background-color: yellow;
-}
-footer {
-    display: flex;
-    position: sticky;
-    height: 80px;
-    background-color: #ffffff;
-    justify-content: space-between;
-    align-items: center;
-    position: absolute;
-    bottom: 0;
-    list-style-type: none;
-    margin-left: 50px;
-}
-#imp {
-    margin-left: 1000%;
 }
