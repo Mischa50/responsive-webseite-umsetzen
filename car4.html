@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Website</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <header>
+            <div id="home-button">
+                <a href="index.html">
+                    <img src="img/home.png" alt="home-button" />
+                </a>
+            </div>
+            <div id="Logo">
+                <a href="index.html">
+                    <img
+                        src="img/new-logo.png"
+                        alt="Logo"
+                    />
+                </a>
+            </div>
+            <div id="contact">
+                <a href="kontakt.html">
+                    <img src="img/contact.png" alt="contact button" />
+                </a>
+            </div>
+            
+        </header>
+        <main>
+            <div class="car1-config">
+                <img
+                    id="car-image"
+                    src="img/porsche-718-Boxster-GTS-4.0-white.jpg"
+                    alt="Porsche GT3"
+                />
+                <div id="color-buttons">
+                    <button
+                        id="white-button"
+                        class="color-button white"
+                    ></button>
+                    <button
+                        id="black-button"
+                        class="color-button black"
+                    ></button>
+                    <button id="red-button" class="color-button red"></button>
+                    <button
+                        id="yellow-button"
+                        class="color-button yellow"
+                    ></button>
+                </div>
+            </div>
+        </main>
+        <script>
+            const carImage = document.getElementById('car-image')
+            const colorButtons = document.querySelectorAll('.color-button')
+
+            colorButtons.forEach((button) => {
+                button.addEventListener('click', function () {
+                    const color = button.classList[1] // Get the second class (e.g., white, black, red, yellow)
+                    carImage.src = `img/porsche-718-Boxster-GTS-4.0-${color}.jpg` // Change the image source based on the button's color class
+                })
+            })
+        </script>
+    </body>
+</html>
