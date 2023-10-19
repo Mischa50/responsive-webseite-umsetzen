@@ -24,8 +24,27 @@
             </a>
         </div>
     </header>
-    <main>
-       
+    <main class="contact">
+        <h1>Kontaktieren Sie uns</h1>
+        <p>Wir freuen uns auf Ihre Anfragen und stehen Ihnen gerne zur Verfügung.</p>
+
+        <div class="contact-form">
+            <form action="submit_form.php" method="post">
+                <label for="name">Ihr Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Ihre E-Mail-Adresse:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Ihre Nachricht:</label>
+                <textarea id="message" name="message" required></textarea>
+
+                <button type="submit">Absenden</button>
+            </form>
+        </div>
     </main>
+    <footer>
+        <p>&copy; 2023 Autohaus. Alle Rechte vorbehalten.</p>
+        </footer>
 </body>
 </html>
