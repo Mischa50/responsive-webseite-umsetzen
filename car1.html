@@ -30,12 +30,7 @@
                 id="car-image"
                 src="img/porschegt3-white.jpg"
                 alt="Porsche GT3"
-            />
-            <div class="price-and-cart"> <!-- New container for price display and "Add to Cart" button -->
-                <p id="car-price">Price: $X,XXX</p> <!-- Price display -->
-                <button id="add-to-cart" onclick="addToCart()">Add to Cart</button> <!-- "Add to Cart" button -->
-            </div>
-            <div id="color-buttons">
+            /><div id="color-buttons">
                 <button
                     id="white-button"
                     class="color-button white"
@@ -49,6 +44,20 @@
                     id="yellow-button"
                     class="color-button yellow"
                 ></button>
+                </div>
+                <div class="car-specs">
+                    <ul>
+                        <li><strong>Modell:</strong> Porsche 911 GT3</li>
+                        <li><strong>Motor:</strong> 4.0L Flat-Six</li>
+                        <li><strong>PS:</strong> 510 PS</li>
+                        <li><strong>0-100 km/h:</strong> 3.4 s</li>
+                        <li><strong>Höchstgeschwindigkeit:</strong> 318 km/h</li>
+                    </ul>
+                </div>
+                <div class="price-and-cart">
+                    <p id="car-price">Price: 215'900.00 CHF</p> 
+                    <button id="add-to-cart" onclick="addToCart()">Request</button> 
+                </div>
             </div>
         </div>
     </main>
@@ -61,15 +70,11 @@
 
         colorButtons.forEach((button) => {
             button.addEventListener('click', function () {
-                const color = button.classList[1] // Get the second class (e.g., white, black, red, yellow)
-                carImage.src = `img/porschegt3-${color}.jpg` // Change the image source based on the button's color class
+                const color = button.classList[1]
+                carImage.src = `img/porschegt3-${color}.jpg`
             })
         })
-
-        // Function to add the item to the cart and redirect to kontakt.html
         function addToCart() {
-            // Add your cart logic here, e.g., updating a shopping cart object or sending data to a server.
-            // For this example, we'll simply redirect to kontakt.html.
             window.location.href = 'kontakt.html'
         }
     </script>

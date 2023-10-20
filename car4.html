@@ -46,6 +46,24 @@
                         class="color-button yellow"
                     ></button>
                 </div>
+                <div class="car-specs">
+                    <ul>
+                        <li><strong>Modell:</strong> 718 Boxster GTS 4.0</li>
+                        <li><strong>Motor:</strong> 4,0L V6</li>
+                        <li><strong>PS:</strong> 400 PS</li>
+                        <li><strong>0-100 km/h:</strong> 4.0 s</li>
+                        <li>
+                            <strong>Höchstgeschwindigkeit:</strong>
+                            288 km/h
+                        </li>
+                    </ul>
+                </div>
+                <div class="price-and-cart">
+                    <p id="car-price">Price: 108'700.00 CHF</p>
+                    <button id="add-to-cart" onclick="addToCart()">
+                        Request
+                    </button>
+                </div>
             </div>
         </main>
         <footer>
@@ -57,10 +75,13 @@
 
             colorButtons.forEach((button) => {
                 button.addEventListener('click', function () {
-                    const color = button.classList[1] // Get the second class (e.g., white, black, red, yellow)
-                    carImage.src = `img/porsche-718-Boxster-GTS-4.0-${color}.jpg` // Change the image source based on the button's color class
+                    const color = button.classList[1]
+                    carImage.src = `img/porsche-718-Boxster-GTS-4.0-${color}.jpg`
                 })
             })
+            function addToCart() {
+                window.location.href = 'kontakt.html'
+            }
         </script>
     </body>
 </html>

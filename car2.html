@@ -31,7 +31,8 @@
                     src="img/cayenne-white.jpg"
                     alt="Porsche GT3"
                 />
-                <div id="color-buttons">
+
+                <div id="black-white-color">
                     <button
                         id="white-button"
                         class="color-button white"
@@ -40,6 +41,25 @@
                         id="black-button"
                         class="color-button black"
                     ></button>
+                </div>
+
+                <div class="car-specs">
+                    <ul>
+                        <li><strong>Modell:</strong> Porsche Cayenne</li>
+                        <li><strong>Motor:</strong> 4,0L V6</li>
+                        <li><strong>PS:</strong> 353 PS</li>
+                        <li><strong>0-100 km/h:</strong> 6.0 s</li>
+                        <li>
+                            <strong>Höchstgeschwindigkeit:</strong> 248 km/h
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="price-and-cart">
+                    <p id="car-price">Price: 106'600.00 CHF</p>
+                    <button id="add-to-cart" onclick="addToCart()">
+                        Request
+                    </button>
                 </div>
             </div>
         </main>
@@ -52,10 +72,13 @@
 
             colorButtons.forEach((button) => {
                 button.addEventListener('click', function () {
-                    const color = button.classList[1] // Get the second class (e.g., white, black, red, yellow)
-                    carImage.src = `img/cayenne-${color}.jpg` // Change the image source based on the button's color class
+                    const color = button.classList[1]
+                    carImage.src = `img/cayenne-${color}.jpg`
                 })
             })
+            function addToCart() {
+                window.location.href = 'kontakt.html'
+            }
         </script>
     </body>
 </html>

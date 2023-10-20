@@ -31,7 +31,8 @@
                     src="img/taycan-4s-white.jpg"
                     alt="Porsche GT3"
                 />
-                <div id="color-buttons">
+                
+                    <div id="black-white-color">
                     <button
                         id="white-button"
                         class="color-button white"
@@ -41,7 +42,28 @@
                         class="color-button black"
                     ></button>
                 </div>
-            </div>
+            
+                <div class="car-specs">
+                    <ul>
+                        <li><strong>Modell:</strong> Porsche Taycan 4S</li>
+                        <li><strong>Motor:</strong> Elektromotor</li>
+                        <li><strong>PS:</strong> 
+                            435 PS</li>
+                        <li><strong>0-100 km/h:</strong> 
+                            3.8 s</li>
+                        <li>
+                            <strong>Höchstgeschwindigkeit:</strong> 
+                            250 km/h
+                        </li>
+                    </ul>
+                </div>
+                <div class="price-and-cart">
+                    <p id="car-price">Price: 129'100.00 CHF</p>
+                    <button id="add-to-cart" onclick="addToCart()">
+                        Request
+                    </button>
+                </div>
+            
         </main>
         <footer>
             <p>&copy; 2023 Autohaus. Alle Rechte vorbehalten.</p>
@@ -52,10 +74,13 @@
 
             colorButtons.forEach((button) => {
                 button.addEventListener('click', function () {
-                    const color = button.classList[1] // Get the second class (e.g., white, black, red, yellow)
-                    carImage.src = `img/taycan-4s-${color}.jpg` // Change the image source based on the button's color class
+                    const color = button.classList[1]
+                    carImage.src = `img/taycan-4s-${color}.jpg`
                 })
             })
+            function addToCart() {
+                window.location.href = 'kontakt.html'
+            }
         </script>
     </body>
 </html>

@@ -84,26 +84,28 @@ h2 {
 }
 p {
     text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 .car1-config {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    flex-direction: column;
+    align-items: flex-start;
     padding: 20px;
 }
 
 .car1-config img {
     display: flex;
-    justify-content: left;
+    justify-content: center;
     width: 550px;
     height: auto;
-    margin-left: 10%;
+    margin-left: 30%;
 }
 #color-buttons {
     display: flex;
     flex-direction: row;
     gap: 10px;
-    margin-right: 25%;
+    margin-left: 34%;
+    margin-top: 1%;
 }
 .color-button {
     width: 80px;
@@ -191,6 +193,47 @@ footer {
         padding: 0 20px;
     }
 }
-#car-price, #add-to-cart {
+#car-price,
+#add-to-cart {
     text-align: center;
+}
+#car-price {
+    width: 50%;
+    text-align: center;
+    margin-left: 14%;
+}
+#add-to-cart {
+    background-color: #4caf50;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    text-transform: uppercase;
+    text-align: center;
+    align-content: center;
+    margin-left: 5%;
+}
+
+#add-to-cart:hover {
+    background-color: #45a049;
+}
+#color-buttons-new {
+    display: flex;
+    flex-direction: row;
+}
+.car-specs{
+    margin-left: 40%;
+}
+.price-and-cart {
+    margin-left: 43%;
+}
+#black-white-color{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin-left: 41%;
+    margin-top: 1%;
 }
