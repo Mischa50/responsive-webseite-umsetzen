@@ -63,7 +63,6 @@ h2 {
     padding-right: 4%;
     padding-left: 4%;
     margin-top: 1%;
-    
 }
 .button {
     display: flex;
@@ -219,13 +218,13 @@ footer {
     display: flex;
     flex-direction: row;
 }
-.car-specs{
+.car-specs {
     margin-left: 40%;
 }
 .price-and-cart {
     margin-left: 43%;
 }
-#black-white-color{
+#black-white-color {
     display: flex;
     flex-direction: row;
     gap: 10px;
@@ -237,7 +236,7 @@ footer {
         max-width: 100%;
         padding: 0px;
     }
-    #Logo img{
+    #Logo img {
         width: 90%;
         height: auto;
         margin-left: 8%;
@@ -245,4 +244,10 @@ footer {
 }
 .main1 {
     margin-left: 7%;
+    margin-right: 7%;
+}
+@media (min-width: 1921px) {
+    .main1 {
+        margin-left: 15%;
+    }
 }
