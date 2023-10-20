@@ -59,11 +59,11 @@ h2 {
 #car5,
 #car6 {
     height: 200px;
-    width: auto;
     display: inline-block;
-    padding-right: 75px;
-    padding-left: 100px;
+    padding-right: 4%;
+    padding-left: 4%;
     margin-top: 1%;
+    
 }
 .button {
     display: flex;
@@ -187,12 +187,7 @@ footer {
 .contact-form button:hover {
     background-color: #45a049;
 }
-@media (max-width: 768px) {
-    .contact-form {
-        max-width: 100%;
-        padding: 0 20px;
-    }
-}
+
 #car-price,
 #add-to-cart {
     text-align: center;
@@ -234,6 +229,20 @@ footer {
     display: flex;
     flex-direction: row;
     gap: 10px;
-    margin-left: 41%;
+    margin-left: 42%;
     margin-top: 1%;
+}
+@media (max-width: 768px) {
+    .contact-form {
+        max-width: 100%;
+        padding: 0px;
+    }
+    #Logo img{
+        width: 90%;
+        height: auto;
+        margin-left: 8%;
+    }
+}
+.main1 {
+    margin-left: 7%;
 }
