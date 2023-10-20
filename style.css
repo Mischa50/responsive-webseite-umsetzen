@@ -191,3 +191,6 @@ footer {
         padding: 0 20px;
     }
 }
+#car-price, #add-to-cart {
+    text-align: center;
+}
